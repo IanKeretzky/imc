@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de Massa Corporal</title>
+</head>
+
+<body>
+
+    <header id="cabeca">
+        <h1>
+            Calculadora Índice de Massa Corporal
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">O que é?</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#porque">Por que Calcular?</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+
+
+
+        </nav>
+    </header>
+    <div>
+        <h2>O que é?</h2>
+        <p>
+            IMC é uma sigla que significa Índice de Massa Corporal, que é um cálculo usado avaliar se uma pessoa está
+            dentro de um peso saudável, levando em consideração sua altura e peso. O cálculo do IMC é uma maneira
+            simples de verificar se o peso de uma pessoa é adequado para sua altura, ajudando a identificar possíveis
+            problemas de saúde relacionados ao peso.
+        </p>
+
+
+    </div>
+    <div>
+        <h2>Calculadora</h2>
+        <P>
+            Fazer o cálculo do IMC é bem fácil. Primeiro, você vai multiplicar o valor de sua altura (em metros) por ele
+            mesmo. Por exemplo, se você medir 1,60 metros, o cálculo será: 1,6 x 1,6 = 2,56.
+        </P>
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura">
+
+        <label for="peso">Peso (kg) :</label>
+        <input type="number" name="peso" id="peso">
+
+        <button onclick="calcImc()">Calcular IMC</button>
+
+        <p>Seu índice de massa corporal é: <span id="resultado"></span></p>
+
+        <p>
+            IMC é a sigla para Índice de Massa Corporal, que é uma fórmula utilizada para avaliar se uma pessoa está
+            dentro
+            de um peso saudável, levando em consideração sua altura e peso. O cálculo do IMC é uma maneira simples de
+            verificar se o peso de uma pessoa é adequado para sua altura, ajudando a identificar possíveis problemas de
+            saúde relacionados ao peso, como obesidade ou magreza excessiva.
+        </p>
+        <!-- <p>
+            A fórmula para calcular o IMC é a seguinte:
+
+            IMC
+            =
+            peso(kg) /
+            altura(m)<sup>2</sup>
+           
+        </p> -->
+        <p>
+            A interpretação dos resultados do IMC é feita com base em faixas predefinidas, que indicam diferentes
+            categorias
+            de peso:
+        </p>
+        <p>
+        <ul>
+            <li>Abaixo do peso: IMC menor que 18,5</li>
+            <li>Peso normal: IMC entre 18,5 e 24,9</li>
+            <li>Sobrepeso: IMC entre 25 e 29,9</li>
+            <li> Obesidade: IMC entre 30 e 39,9</li>
+            <li>Obesidade grave (ou mórbida): IMC de 40 ou mais</li>
+        </ul>
+        </p>
+        <p>
+            É importante notar que o IMC não leva em conta outros fatores, como a composição corporal (por exemplo, a
+            quantidade de massa muscular ou gordura), e, por isso, não deve ser considerado um diagnóstico definitivo de
+            saúde.
+        </p>
+
+
+
+
+    </div>
+    <div>
+        <h2>Por que Calcular?</h2>
+        <p>Calcular o IMC é relevante porque ele fornece uma indicação geral sobre o estado nutricional de uma pessoa,
+            ajudando a identificar possíveis riscos de saúde relacionados ao peso. Embora não seja uma medida perfeita
+            (já que não considera fatores como a composição corporal ou a distribuição de gordura), ele é amplamente
+            utilizado por profissionais de saúde como uma ferramenta rápida e acessível para avaliar o risco de doenças
+            associadas ao peso corporal, como:
+        </p>
+        <p>
+        <ol>
+            <li> Riscos para a saúde
+                O IMC pode ajudar a identificar pessoas com risco de doenças graves relacionadas ao peso.</li>
+
+            <li>Prevenção
+                O cálculo do IMC é uma ferramenta preventiva, pois permite que profissionais de saúde detectem problemas
+                antes que se tornem mais graves.</li>
+
+            <li>Facilidade de acesso
+                O IMC é simples de calcular, rápido de aplicar e não exige equipamentos sofisticados.</li>
+        </ol>
+        </p>
+        <p>
+            Limitações do IMC
+            É importante lembrar que o IMC tem algumas limitações e não deve ser a única medida usada para avaliar a
+            saúde de uma pessoa. Ele não leva em conta a distribuição de gordura ou a composição corporal (como a
+            quantidade de músculos e gordura).
+        </p>
+        <p>
+            Por isso, o IMC é apenas uma ferramenta de triagem e deve ser interpretado com o auxílio de outros exames e
+            avaliações clínicas para um diagnóstico mais preciso da saúde de uma pessoa.
+        </p>
+
+
+
+    </div>
+    <div>
+        <h2>Sobre Nós</h2>
+        <h4>O que é a CAI?</h4>
+        <p>A CAI(corporação de Ajuda Imediata) é uma empresa criada por Hulfman Howard Holmes(H. H. Holmes) que, como
+            médico achou ridiculo o sistema de saúde na inglaterra e criou varias pequenas empresas de saúde pelo mundo,
+            as principais filiais se encontram no Brasil, Chile, Inglaterra, Canadá e Russia.</p>
+        <h4>O que foi a principal motivação H. H. Holmes?</h4>
+        <p>Ele acreditava que vidas valiam o mesmo valor, mesmo muito discodando na época, levando a fama e dinheiro na
+            frente de pessoas que estavam realmente necessitados, fazendo assim a corrupção hospitalar na Inglaterra,
+            cansado dessa realidade onde você poderia apenas pagar para ser atendido primeiro, Holmes inovou o mercado
+            medicinal com a cura para a peste negra, mas, não deu aos hospitais, e sim para pobres e necessitados, a
+            população foi em força contra o lider médico da época Vector Munday e a partir disso Holmes ganhou fama como
+            "O Médico da população" e a partir disso resolveu mudar o sistema de saúde do mundo.</p>
+        <p>
+            Obrigado pelo seus serviços Hulfman Howard Holmes 1322-1406
+        </p>
+    </div>
+    <footer>
+        <p>&copy;Immediate Aid Corporation | 2024</p>
+    </footer>
+    <script>
+        function calcImc() {
+            const altura = document.getElementById("altura").value;
+            const peso = document.getElementById("peso").value;
+            const resultado = peso / (altura ** 2);
+
+            document.getElementById("resultado").textContent = resultado.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>
